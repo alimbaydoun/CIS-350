@@ -1,0 +1,25 @@
+﻿  QuadraticProbing.cpp
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\QuadraticProbing.h(136,23): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.26.28801\include\type_traits(2185): message : see declaration of 'std::hash'
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\QuadraticProbing.h(144): message : see reference to class template instantiation 'HashTable<HashedObj>' being compiled
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\QuadraticProbing.cpp(46,23): warning C4018: '<': signed/unsigned mismatch
+  SpellChecker.cpp
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\QuadraticProbing.h(136,23): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.26.28801\include\type_traits(2185): message : see declaration of 'std::hash'
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\QuadraticProbing.h(144): message : see reference to class template instantiation 'HashTable<HashedObj>' being compiled
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(44,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(46,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(54,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(67,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(77,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(82,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(95,26): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(99,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(116,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(121,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\SpellChecker.cpp(134,26): warning C4018: '<': signed/unsigned mismatch
+  TestQuadraticProbing.cpp
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\QuadraticProbing.h(136,23): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.26.28801\include\type_traits(2185): message : see declaration of 'std::hash'
+C:\Users\ambay\Source\Repos\CIS-350\Project 2\Project 2\QuadraticProbing.h(144): message : see reference to class template instantiation 'HashTable<HashedObj>' being compiled
+  Generating Code...
