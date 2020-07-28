@@ -1,2 +1,5 @@
 		Welcome to CIS-Land!
 
+1. Enter data through a file
+2. Enter data through keyboard
+Select One of the Above: 2
