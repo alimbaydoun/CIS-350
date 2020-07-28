@@ -18,8 +18,8 @@ int main() {
 
 	output.open("output.txt");
 
-	cout << "\t\tWelcome to my Dynamic MST Program" << endl << endl;
-	output << "\t\tWelcome to my Dynamic MST Program" << endl << endl;
+	cout << "\t\tWelcome to CIS-Land!" << endl << endl;
+	output << "\t\tWelcome to CIS-Land!" << endl << endl;
 
 	do {
 		if (selection != 1) {

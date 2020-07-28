@@ -17,7 +17,6 @@ public:
 	void insertVertex(std::string);
 	void insertEdge(std::string, std::string, int);
 	void printGraph();
-	//void check();
 	void decreaseWeight(std::string, std::string, int);
 	void deleteVertex(std::string);
 	void deleteEdge(std::string, std::string);
