@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\ambay\Source\Repos\CIS-350\Project4\Project4\main.cpp(48,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\ambay\Source\Repos\CIS-350\Project4\Project4\main.cpp(150,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\ambay\Source\Repos\CIS-350\Project4\Project4\main.cpp(188,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Project4.vcxproj -> C:\Users\ambay\Source\Repos\CIS-350\Project4\Debug\Project4.exe
