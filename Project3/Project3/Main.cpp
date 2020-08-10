@@ -12,14 +12,14 @@ std::ofstream output;
 
 int main() {
 	ifstream input;
-	string vertex, vertex2, fileName;
+	string fileName, vertex, vertex2;
 	int num = -1, weight, selection = 1;
 	Tree tree;
 
 	output.open("output.txt");
 
-	cout << "\t\tWelcome to CIS-Land!" << endl << endl;
-	output << "\t\tWelcome to CIS-Land!" << endl << endl;
+	cout << "Welcome to CIS Land Internet Optimization Program" << endl << endl;
+	output << "Welcome to CIS Land Internet Optimization Program" << endl << endl;
 
 	do {
 		if (selection != 1) {
@@ -31,18 +31,18 @@ int main() {
 
 		cout << "1. Enter data through a file" << endl;
 		cout << "2. Enter data through keyboard" << endl;
-		cout << "Select One of the Above: ";
+		cout << "Choose a number (1 or 2): ";
 		cin >> selection;
-		output << "1. Enter data through a file" << endl;
-		output << "2. Enter data through keyboard" << endl;
-		output << "Select One of the Above: ";
+		output << "1) Enter data through a file" << endl;
+		output << "2) Enter data through keyboard" << endl;
+		output << "Choose a number (1 or 2): ";
 		output << selection << endl;
 	} while ((selection != 1) && (selection != 2));
 
 	if (selection == 1) {	// user wants to enter initial data through a file
-		cout << "Enter the file name: ";
+		cout << "Please enter name of file to be inputted:  ";
 		cin >> fileName;
-		output << "Enter the file name: " << fileName << endl;
+		output << "Please enter name of file to be inputted: " << fileName << endl;
 		input.open(fileName.c_str());
 		if (!input.is_open()) {	// checking if file exists
 			cout << "Error: file does not exist!" << endl;
@@ -51,8 +51,8 @@ int main() {
 		else {
 			input >> num;	// getting number of vertices
 			if (num == -1) {	// checking if the file is empty
-				cout << "Error: file is empty!" << endl;
-				output << "Error: file is empty!" << endl;
+				cout << "\nError: file is empty!" << endl;
+				output << "\nError: file is empty!" << endl;
 			}
 			else {
 				for (int i = 0; i < num; i++) {	// inserting each vertex to the adjacency list
@@ -102,27 +102,21 @@ int main() {
 		cout << "Directives List" << endl;
 		cout << "1. Print Graph" << endl;
 		cout << "2. Print MST" << endl;
-		cout << "3. Path" << endl;
-		cout << "4. Insert Vertex" << endl;
-		cout << "5. Insert Edge" << endl;
-		cout << "6. Delete Vertex" << endl;
-		cout << "7. Delete Edge" << endl;
-		cout << "8. Increase Weight" << endl;
-		cout << "9. Decrease Weight" << endl;
-		cout << "10. Quit" << endl;
+		cout << "3. Shortest Path" << endl;
+		cout << "4. Insert Edge" << endl;
+		cout << "5. Increase Weight" << endl;
+		cout << "6. Decrease Weight" << endl;
+		cout << "7. Quit" << endl;
 		cout << "Select One of the Above: ";
 		output << "---------------------------------------------------------------------" << endl;
 		output << "Directives List" << endl;
 		output << "1. Print Graph" << endl;
 		output << "2. Print MST" << endl;
-		output << "3. Path" << endl;
-		output << "4. Insert Vertex" << endl;
-		output << "5. Insert Edge" << endl;
-		output << "6. Delete Vertex" << endl;
-		output << "7. Delete Edge" << endl;
-		output << "8. Increase Weight" << endl;
-		output << "9. Decrease Weight" << endl;
-		output << "10. Quit" << endl;
+		output << "3. Shortest Path" << endl;
+		output << "4. Insert Edge" << endl;
+		output << "5. Increase Weight" << endl;
+		output << "6. Decrease Weight" << endl;
+		output << "7. Quit" << endl;
 		output << "Select One of the Above: ";
 		cin >> selection;
 		output << selection << endl;
@@ -135,7 +129,6 @@ int main() {
 			tree.clearVisited();
 			tree.checkBuild();
 			tree.callPrint();
-			//tree.printMST(tree.roots[0], 0);
 			break;
 		case 3:
 			cout << "Enter the starting vertex: ";
@@ -151,13 +144,6 @@ int main() {
 			tree.path(vertex, vertex2);
 			break;
 		case 4:
-			cout << "\nEnter vertex identifier: ";
-			output << "\nEnter vertex identifier: ";
-			cin >> vertex;
-			output << vertex;
-			tree.Graph::insertVertex(vertex);
-			break;
-		case 5:
 			cout << "\nEnter the first endpoint vertex: ";
 			output << "\nEnter the first endpoint vertex: ";
 			cin >> vertex;
@@ -172,25 +158,7 @@ int main() {
 			output << weight << endl;
 			tree.Graph::insertEdge(vertex, vertex2, weight);
 			break;
-		case 6:
-			cout << "Enter the vertex: ";
-			output << "Enter the vertex: ";
-			cin >> vertex;
-			output << vertex << endl;
-			tree.Graph::deleteVertex(vertex);
-			break;
-		case 7:
-			cout << "Enter the first endpoint vertex: ";
-			output << "Enter the first endpoint vertex: ";
-			cin >> vertex;
-			output << vertex << endl;
-			cout << "Enter the second endpoint vertex: ";
-			output << "Enter the second endpoint vertex: ";
-			cin >> vertex2;
-			output << vertex2 << endl;
-			tree.Graph::deleteEdge(vertex, vertex2);
-			break;
-		case 8:
+		case 5:
 			cout << "Enter the first endpoint vertex: ";
 			output << "Enter the first endpoint vertex: ";
 			cin >> vertex;
@@ -205,7 +173,7 @@ int main() {
 			output << weight << endl;
 			tree.Graph::increaseWeight(vertex, vertex2, weight);
 			break;
-		case 9:
+		case 6:
 			cout << "Enter the first endpoint vertex: ";
 			output << "Enter the first endpoint vertex: ";
 			cin >> vertex;
@@ -220,7 +188,7 @@ int main() {
 			output << weight << endl;
 			tree.Graph::decreaseWeight(vertex, vertex2, weight);
 			break;
-		case 10:
+		case 7:
 			cout << "\nThank You for Using this Program!" << endl;
 			output << "\nThank You for Using this Program!" << endl;
 			break;
@@ -230,7 +198,7 @@ int main() {
 			output << "\nError: invalid input" << endl;
 			output << "Please try again" << endl;
 		}
-	} while (selection != 10);
+	} while (selection != 7);
 
 	output.close();
 

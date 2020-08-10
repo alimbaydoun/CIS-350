@@ -1,5 +1,16 @@
-		Welcome to CIS-Land!
+Welcome to CIS Land Internet Optimization Program
 
-1. Enter data through a file
-2. Enter data through keyboard
-Select One of the Above: 2
+1) Enter data through a file
+2) Enter data through keyboard
+Choose a number (1 or 2): 1
+Please enter name of file to be inputted: 1
+Error: file does not exist!
+---------------------------------------------------------------------
+Directives List
+1. Print Graph
+2. Print MST
+3. Shortest Path
+4. Insert Edge
+5. Increase Weight
+6. Decrease Weight
+7. Quit
